@@ -38,7 +38,7 @@ def lambda_handler(event, context):
         df.to_csv(csv_buffer,index=False)
 
         s3 = boto3.client('s3')
-        bucketName = "de-e2e-data-pipeline"
+        bucketName = "your bucket name"
         key = "snowflake-data-wh/" + table + "_" + str(datetime.now()) + ".csv"
         print(key)
         
