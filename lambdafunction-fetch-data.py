@@ -13,7 +13,7 @@ def get_weather_data(city):
     api_url = "http://api.weatherapi.com/v1/current.json"
     params = {  
         "q": city,    
-        "key": "6a440a7110ab49e4ad632528241809"
+        "key": "your api key"
     }  
     response = requests.get(api_url, params=params)  
     data = response.json()  
